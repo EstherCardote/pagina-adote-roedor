@@ -13,7 +13,7 @@
 
     /* Variáveis de fonte */
     --fonte-principal: "Mouse Memoirs", sans-serif;
-    --fonte-gigante: 200px;
+    --fonte-gigante: 150px;
     --fonte-media: 50px
         /* Variáveis de fonte */
 }
@@ -34,7 +34,7 @@
 .banner img {
     grid-column: 2/6;
     grid-row: 2/6;
-    width: 110%;
+    width: 100%;
     height: auto;
     /* mantém a proporção da imagem */
 }
@@ -55,33 +55,6 @@
     color: var(--roxin);
     text-align: center;
 }
-
-/* REPLICANDO BANNER COM FLEX */
-
-.banner2 {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.text-box {
-    font-family: var(--fonte-principal);
-    font-size: var(--fonte-gigante);
-}
-
-.banner2 img {}
-
-.texto-foco {
-    font-family: var(--fonte-principal);
-    font-size: var(--fonte-principal);
-}
-
-.texto-secundario {
-    
-}
-
-
-/* REPLICANDO BANNER COM FLEX */
 
 #card-container {
     display: flex;
@@ -115,4 +88,32 @@
     border-radius: 0 0 20px 20px;
     font-family: var(--fonte-principal);
     font-size: 20px;
+}
+
+.barra-navegacao {
+    background-color: var(--cor-principal) !important;
+    /* Força a aplicação da cor */
+}
+
+@media screen and (max-width:430px) {
+    header {
+        background-color: var(--cor-principal);
+    }
+
+    /* Alteração na barra de navegação */
+    .barra-navegacao {
+        background-color: var(--cor-principal) !important;
+        /* Força a aplicação da cor */
+    }
+
+    .banner {
+        display: flex;
+        flex-direction: column;
+        width: 430px;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
 }
