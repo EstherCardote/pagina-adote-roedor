@@ -90,20 +90,26 @@
     font-size: 20px;
 }
 
-.barra-navegacao {
-    background-color: var(--cor-principal) !important;
-    /* Força a aplicação da cor */
+.container-footer {
+    margin: 50px 204px 50px 204px;
+}
+
+footer {
+    background-color: var(--roxin);
+}
+
+#layer1-footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo-footer {
+    height: 80px;
 }
 
 @media screen and (max-width:430px) {
     header {
         background-color: var(--cor-principal);
-    }
-
-    /* Alteração na barra de navegação */
-    .barra-navegacao {
-        background-color: var(--cor-principal) !important;
-        /* Força a aplicação da cor */
     }
 
     .banner {
