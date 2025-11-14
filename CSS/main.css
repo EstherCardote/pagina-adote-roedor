@@ -18,6 +18,10 @@
         /* Variáveis de fonte */
 }
 
+a {
+    text-decoration: none;
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -125,7 +129,6 @@ footer {
 
 .footer-list a {
     color: #c7d5e0;
-    text-decoration: none;
 }
 
 .footer-list a:hover {
